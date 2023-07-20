@@ -1,6 +1,12 @@
 /* LINK COLOR HUNT */
-/* https://colorhunt.co/palette/faf0d7ffd9c08cc0decceebc */
+/* https://colorhunt.co/palette/ffdcb6ecc9eec9a7eb9384d1*/
 
+:root {
+  --background:#2c2c2c;
+  --linkedin:#0a66c2;
+  --email:#B23121;
+  --github:#F4CBB2;
+}
 
 * {
   margin: 0;
@@ -14,7 +20,7 @@ img {
 }
 
 body {
-  background-color: #FAF0D7;
+  background-color: rgba(255, 220, 182, 0.7);
   font-size: 18px;
   font-family: 'Inter', sans-serif;
   margin: 50px;
@@ -31,6 +37,7 @@ body {
 
 .header {
   display: grid;
+  gap: 20px;
   grid-template-areas: 
   'hero hero feature-1'
   'hero hero feature-2';
@@ -57,12 +64,20 @@ body {
 
 .feature-1 {
   grid-area: feature-1;
-  background-color: #FFD9C0;
+  background-color: #ECC9EE;
+}
+
+.feature-1-text {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 20px;
 }
 
 .feature-2 {
   grid-area: feature-2;
-  background-color: #8CC0DE;
+  background-color: #C9A7EB;
  
 }
 
@@ -78,6 +93,7 @@ body {
 }
 
 .features h4 {
+  text-align: center;
   font-size: 2em;
   font-weight: bold;
 }
@@ -214,11 +230,12 @@ main .aboutcard .icon {
 }
 
 main .aboutcard  h3 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 main .aboutcard p {
-  font-weight: lighter;
+  /* font-weight: lighter; */
+  font-size: 20px;
   text-align: left;
 }
 
@@ -237,7 +254,6 @@ main h4 {
 
 .bg-project {
   width: 100%;
-  /* border: 3px solid black; */
   display: flex;
   justify-content: center;
   align-items: start;
@@ -246,7 +262,6 @@ main h4 {
 }
 
 .articles {
-  /* border: 3px solid red; */
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -260,8 +275,7 @@ main h4 {
 }
 
 .articles article {
-  /* border: 3px solid #0081C9; */
-  border-image: linear-gradient(to bottom,rgb(153, 144, 144), #86e5ff) 30;
+  border-image: linear-gradient(to left,rgb(153, 144, 144), #ECC9EE) 30;
   border-width: 3px;
   border-style: solid;
   border-radius: 5px;
@@ -274,15 +288,18 @@ main h4 {
   padding: 10px;
 }
 
+.article-preview p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
 .articles .article-preview a {
   display: inline-flex;
   text-decoration: none;
   color: black;
   padding: 10px;
-  background-color: #CCEEBC;
+  background-color: #9384D1;
   border-radius: 5px;
-  /* width: 100px;
-  height: 20px; */
   transition: width 0.5s, height 1s;
   
 }
@@ -314,7 +331,7 @@ main h4 {
 p {
   padding: 5px;
   margin: 10px;
-  text-align: justify;
+  text-align: left;
 }
 
 
@@ -323,13 +340,58 @@ p {
 footer {
   width: 100%;
   height: auto;
-  /* border: 3px solid black; */
-  /* background: rgba(128, 128, 128, 0.2); */
   padding: 20px;
   text-align: center;
 }
 
-footer h3 {
+footer h4 {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+
+.socialmedia-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+}
+
+.socialmedia-button {
+  width:80px;
+  height: 80px;
+  border-radius: 50%;
+  outline: 2px solid white;
+  padding: 15px;
+  cursor: pointer;
+  transition: all .3s;
+  display: grid;
+  place-items: center;
+}
+
+.socialmedia-button:hover {
+  outline-offset: 3px;
+  transition: all .3s;
+}
+
+.socialmedia-button:hover:nth-child(1) {
+  background-color: var(--email);
+}
+
+.socialmedia-button:hover:nth-child(2) {
+  background-color: var(--github);
+}
+
+.socialmedia-button:hover:nth-child(3) {
+  background-color: var(--linkedin);
+}
+
+
+
+
+/* footer h3 {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -341,11 +403,10 @@ footer i {
 }
 
 footer i:hover {
-  /* background-color: rgba(255, 201, 60, 0.6); */
   border-radius: 20px;
   text-shadow: 2px 2px 10px;
 }
-
+ */
 
 
 
@@ -380,6 +441,11 @@ footer i:hover {
   justify-content: center;
 }
 
+main .wrap-aboutcard {
+  display: flex;
+  flex-direction: column;
+}
+
   
 }
 
@@ -401,7 +467,7 @@ footer i:hover {
     right: 0;
     height: 100vh;
     top: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: #F4F2DE;
     width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
@@ -417,6 +483,11 @@ footer i:hover {
     transform: translateY(0);
   }
 
+  main .wrap-aboutcard {
+    display: flex;
+    flex-direction: column;
+  }
+
   
 }
 
@@ -430,6 +501,11 @@ footer i:hover {
     'feature-1'
     'feature-2'
     ;
+  }
+
+  main .wrap-aboutcard {
+    display: flex;
+    flex-direction: column;
   }
 }
 
