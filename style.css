@@ -380,9 +380,6 @@ footer i:hover {
   justify-content: center;
 }
 
-main .wrap-aboutcard {
-  flex-direction: column;
-}
   
 }
 
@@ -420,9 +417,6 @@ main .wrap-aboutcard {
     transform: translateY(0);
   }
 
-  main .wrap-aboutcard {
-    flex-direction: column;
-  }
   
 }
 
@@ -436,10 +430,6 @@ main .wrap-aboutcard {
     'feature-1'
     'feature-2'
     ;
-  }
-
-  main .wrap-aboutcard {
-    flex-direction: column;
   }
 }
 
