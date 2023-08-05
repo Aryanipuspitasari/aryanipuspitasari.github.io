@@ -37,7 +37,7 @@ body {
 
 .header {
   display: grid;
-  gap: 10px;
+  /* gap: 10px; */
   grid-template-areas:
     "hero hero feature-1"
     "hero hero feature-2";
@@ -64,7 +64,7 @@ body {
 
 .feature-1 {
   grid-area: feature-1;
-  background-color: #9fb4cc;
+  background-color: #7D8C99;
 }
 
 .feature-1-text {
@@ -236,6 +236,51 @@ main .aboutcard p {
   text-align: left;
 }
 
+
+main .aboutcard a {
+  position: relative;
+  border: 2px solid white;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 30px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.3s;
+  background-color: #9FB4CC;
+}
+
+main .aboutcard a::after {
+  font: var(--fa-font-solid);
+  content: "\f019";
+  margin-left: 10px;
+}
+
+main .aboutcard a:hover {
+  color: black;
+  background-color: #7D8C99;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-image:
+   linear-gradient(
+    to right,
+    #3bd9d9 0%,
+    rgb(223, 233, 223)100%
+    );
+  transition: 10s ease;
+  z-index: -1;
+}
+
+main .aboutcard a::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+}
+
+
 /* PROJECT */
 
 main #project {
@@ -365,6 +410,10 @@ footer h4 {
   place-items: center;
 }
 
+footer i {
+  font-size: 50px;
+  color: black;
+}
 .socialmedia-button:hover {
   outline-offset: 3px;
   transition: all 0.3s;
@@ -381,23 +430,6 @@ footer h4 {
 .socialmedia-button:hover:nth-child(3) {
   background-color: var(--linkedin);
 }
-
-/* footer h3 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-
-footer i {
-  font-size: 30px;
-  padding: 0 40px;
-  color: black;
-}
-
-footer i:hover {
-  border-radius: 20px;
-  text-shadow: 2px 2px 10px;
-}
- */
 
 /* RESPONSIVE BREAK POINT */
 
