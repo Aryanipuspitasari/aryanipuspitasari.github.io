@@ -1,5 +1,5 @@
 /* LINK COLOR HUNT */
-/* https://coolors.co/c1e5f6-4b535d-9fb4cc-7d8c99*/
+/* https://coolors.co/c7af91-c1a683-b39b7e-c3d2e3-6f4a5f*/
 
 :root {
   --background: #2c2c2c;
@@ -20,7 +20,7 @@ header img {
 }
 
 body {
-  background-color: #c1e5f6;
+  background-color: #C3D2E3;
   font-size: 18px;
   font-family: "Inter", sans-serif;
   margin: 50px;
@@ -29,7 +29,8 @@ body {
 /* CONTAINER HEADER */
 
 .container-header {
-  height: 70vh;
+  /* border: 3px solid red; */
+  height: 80vh;
   display: grid;
   gap: 10px;
 }
@@ -46,7 +47,7 @@ body {
 .hero {
   grid-area: hero;
   min-height: 350px;
-  background-color: grey;
+  background-color: white;
   /* background-image: url(./img/welcome.jpeg);
   background-size: cover;
   background-position: center; */
@@ -54,7 +55,7 @@ body {
 }
 
 .hero > * {
-  /* display: none; */
+  display: none;
 }
 
 .features {
@@ -132,8 +133,8 @@ body {
 .menu ul li a {
   display: block;
   text-decoration: none;
-  background-color: #4b535d;
-  color: white;
+  background-color: #C7AF91;
+  color: black;
   text-align: center;
   padding: 5px;
   text-transform: uppercase;
@@ -341,12 +342,13 @@ main .aboutcard a::before {
   position: absolute;
 } */
 
-main .wrap-aboutcontent {
-  width: 80%;
-  margin: 0 auto;
+
+main .aboutcontainer {
+  /* border: 3px solid red; */
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  width: 80%;
+  gap: 30px;
+  margin: 0 auto;
   padding: 20px;
 }
 
@@ -449,9 +451,9 @@ main h4 {
 .articles .article-preview a {
   display: inline-flex;
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   padding: 5px;
-  background-color: #4b535d;
+  background-color: #C7AF91;
   border-radius: 5px;
   transition: width 0.5s, height 1s;
 }
@@ -459,8 +461,8 @@ main h4 {
 .articles .article-preview a:hover {
   transform: scale(1, 1.2);
   mix-blend-mode: darken;
-  background-color: #9fb4cc;
-  color: black;
+  background-color: #6F4A5F;
+  color: white;
 }
 
 .articles figure {
@@ -613,18 +615,20 @@ footer i {
     justify-content: center;
   }
 
-  main .wrap-aboutcontent {
+  main .aboutcontainer {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
 
-  main .wrap-aboutcard {
+  /* main .wrap-aboutcard {
     grid-template-columns: 1fr;
   }
 
   main .aboutcard {
     padding-bottom: 50%;
-  } */
+  }  */
 }
 
 @media (max-width: 768px) {
@@ -670,6 +674,12 @@ footer i {
     opacity: 1;
     transform: translateY(0);
   }
+
+  main .aboutcontainer img {
+    width: 500px;
+    height: 500px;
+    
+   }
 /* 
   main .wrap-aboutcard {
     grid-template-columns: 1fr;
@@ -706,7 +716,11 @@ footer i {
     width: 60%;
   flex-direction: column;
   }
-/* 
+
+  main .aboutcontainer img {
+    width: 250px;
+    height: 250px;
+   }
 
   /* main .wrap-aboutcard {
     grid-template-columns: 1fr;
