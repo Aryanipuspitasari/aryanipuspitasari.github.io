@@ -46,14 +46,15 @@ body {
 .hero {
   grid-area: hero;
   min-height: 350px;
-  background-image: url(./img/welcome.jpeg);
+  background-color: grey;
+  /* background-image: url(./img/welcome.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   padding: 50px;
 }
 
 .hero > * {
-  display: none;
+  /* display: none; */
 }
 
 .features {
@@ -209,11 +210,13 @@ body {
 /* ABOUT*/
 
 main {
-  padding-top: 100px;
+  /* border: 3px solid blue; */
+  margin-top: 10%;
+  padding-top: 10%;
   padding-bottom: 50px;
 }
 
-main .aboutcontainer {
+/* main .aboutcontainer {
   padding-top: 10%;
   padding-bottom: 10%;
   display: flex;
@@ -241,13 +244,9 @@ main .aboutcard {
   border-radius: 20px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
   position: relative;
-  /* width: 100%;
+  width: 100%;
   height: 0;
-  padding-bottom: 100%; */
-  width: 50%;
-  height: 0;
-  padding-bottom: 40%;
-  margin: 0 auto;
+  padding-bottom: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
@@ -305,7 +304,6 @@ main .aboutcard .card-back:last-child {
 main .aboutcard a {
   position: relative;
   border: 2px solid white;
-  /* padding: 5px; */
   text-decoration: none;
   cursor: pointer;
   border-radius: 30px;
@@ -341,13 +339,75 @@ main .aboutcard a::before {
   content: "";
   display: block;
   position: absolute;
+} */
+
+main .wrap-aboutcontent {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
 }
+
+
+main .aboutcontainer img {
+ width: 500px;
+ height: 500px;
+  border-radius: 50%;
+}
+
+main .aboutcontainer .about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+main .aboutcontainer .about-text p {
+  font-size: 25px;
+  text-align: justify;
+  letter-spacing: -1px;
+}
+
+main .cv {
+  display: flex;
+  gap: 20px;
+}
+
+main .aboutcontainer .about-text a {
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+main .aboutcontainer .about-text a::after {
+  font: var(--fa-font-solid);
+  content: "\f019";
+  margin-left: 10px;
+}
+
+main .aboutcontainer .about-text a:hover {
+  background-color: grey;
+  color: white;
+  border-radius: 20px;
+}
+
+
 
 /* PROJECT */
 
 main .project {
-  /* padding-top: 100px;
-  padding-bottom: 100px; */
+  margin-top: 25%;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 main h4 {
@@ -553,13 +613,18 @@ footer i {
     justify-content: center;
   }
 
+  main .wrap-aboutcontent {
+    flex-direction: column;
+  }
+
+
   main .wrap-aboutcard {
     grid-template-columns: 1fr;
   }
 
   main .aboutcard {
     padding-bottom: 50%;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
@@ -605,14 +670,14 @@ footer i {
     opacity: 1;
     transform: translateY(0);
   }
-
+/* 
   main .wrap-aboutcard {
     grid-template-columns: 1fr;
   }
 
   main .aboutcard {
     padding-bottom: 40%;
-  }
+  } */
 }
 
 @media (max-width: 600px) {
@@ -637,7 +702,13 @@ footer i {
       "feature-2";
   }
 
-  main .wrap-aboutcard {
+  main .cv {
+    width: 60%;
+  flex-direction: column;
+  }
+/* 
+
+  /* main .wrap-aboutcard {
     grid-template-columns: 1fr;
   }
 
@@ -647,5 +718,5 @@ footer i {
 
   main .aboutcard .card-back:last-child {
     gap: 5px;
-  }
+  } */
 }
