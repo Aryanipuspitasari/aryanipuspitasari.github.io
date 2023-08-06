@@ -15,42 +15,44 @@
   scroll-behavior: smooth;
 }
 
-header img {
+/* header img {
   width: 100%;
-}
+} */
 
 body {
   background-color: #C3D2E3;
   font-size: 18px;
   font-family: "Inter", sans-serif;
-  margin: 50px;
+  margin: 0 50px 50px 50px;
 }
 
 /* CONTAINER HEADER */
 
 .container-header {
   /* border: 3px solid red; */
-  height: 80vh;
+  height: 100vh;
   display: grid;
   gap: 10px;
+  margin-top:-15%;
 }
 
 /* HEADER */
 
 .header {
+  /* border: 3px solid blue; */
   display: grid;
   grid-template-areas:
     "hero hero feature-1"
     "hero hero feature-2";
+    margin-top: 5%;
 }
 
 .hero {
   grid-area: hero;
   min-height: 350px;
-  background-color: white;
-  /* background-image: url(./img/welcome.jpeg);
+  background-image: url(./img/damian-unsplash.jpg);
   background-size: cover;
-  background-position: center; */
+  background-position: center;
   padding: 50px;
 }
 
@@ -580,7 +582,7 @@ footer i {
   .container-header {
     /* border: 3px solid red; */
     height: 70vh;
-    margin-top: 20%;
+    margin-top: 10px;
   }
 
   .features p {
@@ -635,7 +637,7 @@ footer i {
 
   .container-header {
     height: 70vh;
-    margin-top: -45%;
+    margin-top: -18%;
   }
 
   .features p {
@@ -696,7 +698,6 @@ footer i {
   }
 
   .container-header {
-    /* border: 3px solid red; */
     height: 70vh;
     margin-top: -10%;
   }
