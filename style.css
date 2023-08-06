@@ -634,9 +634,8 @@ footer i {
 @media (max-width: 768px) {
 
   .container-header {
-    /* border: 3px solid red; */
     height: 70vh;
-    margin-top: -25%;
+    margin-top: -45%;
   }
 
   .features p {
@@ -661,6 +660,7 @@ footer i {
     top: 0;
     background-color: #f4f2de;
     width: 100%;
+    height: 60%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
