@@ -29,7 +29,6 @@ body {
 /* CONTAINER HEADER */
 
 .container-header {
-  /* border: 3px solid red; */
   height: 100vh;
   display: grid;
   gap: 10px;
@@ -39,7 +38,6 @@ body {
 /* HEADER */
 
 .header {
-  /* border: 3px solid blue; */
   display: grid;
   grid-template-areas:
     "hero hero feature-1"
@@ -67,7 +65,7 @@ body {
 
 .feature-1 {
   grid-area: feature-1;
-  background-color: #7d8c99;
+  background-color: rgba(199, 175, 145, 0.5);
 }
 
 .feature-1-text {
@@ -80,7 +78,7 @@ body {
 
 .feature-2 {
   grid-area: feature-2;
-  background-color: #9fb4cc;
+  background-color: rgba(236, 210, 179, 0.3);
 }
 
 .feature-2-icon {
