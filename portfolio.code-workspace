@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../exercise-submit-to-github"
+		},
+		{
+			"path": "../../../course-material/Course-Material"
+		},
+		{
+			"path": "../../../random"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio"
+	}
+}
