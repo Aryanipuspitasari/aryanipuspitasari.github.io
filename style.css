@@ -622,7 +622,7 @@ footer i {
   .hero {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: start;
     justify-content: center;
   }
 
